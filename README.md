@@ -3,12 +3,12 @@
 **🌐 Language / 语言 / Язык:** [English](README.md) · [简体中文](README.zh-CN.md) · [Русский](README.ru.md)
 
 ![Status](https://img.shields.io/badge/status-🟢_live-2ea44f?style=flat-square)
-[![Engine](https://img.shields.io/badge/engine-shared_core-6e40c9?style=flat-square)](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits)
+[![Engine](https://img.shields.io/badge/engine-shared_core-6e40c9?style=flat-square)](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits)
 [![Rust](https://img.shields.io/badge/rust-1.70+-orange.svg?style=flat-square&logo=rust)](https://www.rust-lang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
-[![CI](https://github.com/HarrierOnChain/Myriad-Markets/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrierOnChain/Myriad-Markets/actions/workflows/ci.yml)
+[![CI](https://github.com/tarpboi/Myriad-Markets/actions/workflows/ci.yml/badge.svg)](https://github.com/tarpboi/Myriad-Markets/actions/workflows/ci.yml)
 
-> Automated **Myriad Markets trading bot** — Crypto. Part of the [Prediction Market Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) suite: one execution core, one risk layer, every venue.
+> Automated **Myriad Markets trading bot** — Crypto. Part of the [Prediction Market Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits) suite: one execution core, one risk layer, every venue.
 
 **Myriad Markets** is **live in production today.**
 
@@ -36,7 +36,7 @@ These bots run on Myriad Markets through a single venue adapter on the shared en
 | 📊 **Orderbook Imbalance** — the signal *is* the order book, no external feeds |
 | 🎯 **Directional Arbitrage** — arb base (Up + Down < $1), tilted toward the side with more edge |
 
-> Want a strategy not listed here on Myriad Markets? Adapter coverage is demand-driven — [ask](https://t.me/HarrierOnChain).
+> Want a strategy not listed here on Myriad Markets? Adapter coverage is demand-driven — [ask](https://t.me/tarpboi).
 
 ---
 
@@ -45,7 +45,7 @@ These bots run on Myriad Markets through a single venue adapter on the shared en
 Clone, drop in your keys, and run — the TUI lets you pick a strategy.
 
 ```bash
-git clone https://github.com/HarrierOnChain/Myriad-Markets.git
+git clone https://github.com/tarpboi/Myriad-Markets.git
 cd Myriad-Markets
 cp config.example.yaml config.yaml   # add your keys
 cargo run --release                  # launch the TUI
@@ -58,7 +58,7 @@ cargo run --release                  # launch the TUI
 
 This repo is the **Myriad Markets** entry point. The execution core, risk layer, and all 20+ venue adapters live in the main toolkit:
 
-### 👉 **[Prediction-Markets-Trading-Bot-Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits)** — the full suite
+### 👉 **[Prediction-Markets-Trading-Bot-Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits)** — the full suite
 
 | | |
 |---|---|
@@ -75,9 +75,9 @@ Adding a venue means writing **one adapter** — not rebuilding a bot.
 
 | Platform | Link |
 |----------|------|
-| **Full toolkit** | [Prediction-Markets-Trading-Bot-Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) |
-| **Telegram** | [@HarrierOnChain](https://t.me/HarrierOnChain) |
-| **Discussions** | [GitHub Discussions](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits/discussions) |
+| **Full toolkit** | [Prediction-Markets-Trading-Bot-Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits) |
+| **Telegram** | [@tarpboi](https://t.me/tarpboi) |
+| **Discussions** | [GitHub Discussions](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits/discussions) |
 
 *Response time is typically within a few hours.*
 
@@ -85,9 +85,9 @@ Adding a venue means writing **one adapter** — not rebuilding a bot.
 
 ## Related venues
 
-[Kalshi](https://github.com/HarrierOnChain/Kalshi) · [Polymarket](https://github.com/HarrierOnChain/Polymarket) · [Augur](https://github.com/HarrierOnChain/Augur) · [Azuro](https://github.com/HarrierOnChain/Azuro)
+[Kalshi](https://github.com/tarpboi/Kalshi) · [Polymarket](https://github.com/tarpboi/Polymarket) · [Augur](https://github.com/tarpboi/Augur) · [Azuro](https://github.com/tarpboi/Azuro)
 
-> Browse the full venue directory in the [main toolkit →](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits#venue-coverage)
+> Browse the full venue directory in the [main toolkit →](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits#venue-coverage)
 
 ---
 
@@ -99,8 +99,8 @@ Adding a venue means writing **one adapter** — not rebuilding a bot.
 
 <div align="center">
 
-**Myriad Markets trading bot · built on the [Prediction Market Toolkits](https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits) engine**
+**Myriad Markets trading bot · built on the [Prediction Market Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits) engine**
 
-[![Telegram](https://img.shields.io/badge/Telegram-@HarrierOnChain-26A5E4?style=flat-square&logo=telegram)](https://t.me/HarrierOnChain)
+[![Telegram](https://img.shields.io/badge/Telegram-@tarpboi-26A5E4?style=flat-square&logo=telegram)](https://t.me/tarpboi)
 
 </div>
