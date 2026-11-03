@@ -9,7 +9,7 @@ pub const NAME: &str = "Myriad Markets";
 /// Venue category.
 pub const VENUE_TYPE: &str = "Crypto";
 
-/// Strategies this venue runs on the shared engine.
+/// Strategies mapped to this venue on the shared engine.
 pub const STRATEGIES: &[&str] = &[
     "Orderbook Imbalance",
     "Directional Arbitrage",

@@ -2,34 +2,20 @@
 
 **🌐 Language / 语言 / Язык:** [English](README.md) · [简体中文](README.zh-CN.md) · [Русский](README.ru.md)
 
-![Status](https://img.shields.io/badge/status-🟢_live-2ea44f?style=flat-square)
 [![Engine](https://img.shields.io/badge/engine-shared_core-6e40c9?style=flat-square)](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits)
 [![Rust](https://img.shields.io/badge/rust-1.70+-orange.svg?style=flat-square&logo=rust)](https://www.rust-lang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![CI](https://github.com/tarpboi/Myriad-Markets/actions/workflows/ci.yml/badge.svg)](https://github.com/tarpboi/Myriad-Markets/actions/workflows/ci.yml)
 
-> 自动化 **Myriad Markets 交易机器人** — 加密。隶属 [Prediction Market Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits) 套件：一个执行核心，一个风控层，覆盖所有平台。
+> **Myriad Markets 交易机器人** — 加密。隶属 [Prediction Market Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits) 套件：一个执行核心，一个风控层，覆盖所有平台。
 
-**Myriad Markets** 现已在生产环境中**正式上线**。
-
----
-
-## Myriad Markets 实盘运行
-
-<div align="center">
-
-<img width="820" alt="Myriad Markets trading bot TUI" src="https://github.com/user-attachments/assets/b6c51ba1-14c6-4582-858c-e9441516dd1d" />
-<img width="820" alt="Myriad Markets trading bot TUI" src="https://github.com/user-attachments/assets/66d9cb72-e14a-414f-93e5-600fb1d3f49f" />
-
-<sub>共享 TUI 在 Myriad Markets 上运行 — 实时持仓、盈亏与熔断状态。 <!-- TODO: swap in Myriad Markets-specific captures --></sub>
-
-</div>
+**Myriad Markets** 已映射到共享引擎，但适配器尚未接入。本仓库保存平台元数据；交易代码位于主工具包，目前仅在 Polymarket 上执行。
 
 ---
 
 ## Myriad Markets 上的策略
 
-这些机器人通过单一平台适配器运行在共享引擎之上 — 相同的风控、相同的 TUI、完整的空跑（dry-run）支持。
+以下是映射到 Myriad Markets 的策略。适配器接入后即可在此运行 — 相同的风控、相同的 TUI、完整的空跑（dry-run）支持。
 
 | 策略 |
 |----------|
@@ -42,21 +28,20 @@
 
 ## 快速开始
 
-克隆仓库、填入密钥、运行 —— TUI 让你选择策略。
+交易代码位于主工具包。克隆它、填入密钥，并从空跑开始。目前运行于 Polymarket。
 
 ```bash
-git clone https://github.com/tarpboi/Myriad-Markets.git
-cd Myriad-Markets
-cp config.example.yaml config.yaml   # add your keys
-cargo run --release                  # launch the TUI
-# headless: cargo run --release -- run copy-trading
+git clone https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits.git
+cd Prediction-Markets-Trading-Bot-Toolkits
+cp config.yaml.example config.yaml        # add your keys
+cargo run --release -- run copy-trading   # dry-run: enable_trading is false by default
 ```
 
 ---
 
 ## 一个引擎，覆盖所有平台
 
-本仓库是 **Myriad Markets** 的入口。执行核心、风控层以及全部 20+ 个平台适配器都位于主工具包中：
+执行核心与风控层都位于主工具包中：
 
 ### 👉 **[Prediction-Markets-Trading-Bot-Toolkits](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits)** — 完整套件
 
@@ -65,7 +50,7 @@ cargo run --release                  # launch the TUI
 | **订单执行** | 端到端 < 100 毫秒 |
 | **事件处理** | 每事件 < 1 毫秒 |
 | **安全** | 熔断器 · 深度保护 · 空跑 · 最小交易额 |
-| **平台** | 7 个已上线 · 20+ 个平台 |
+| **平台** | 已映射 21 个平台 |
 
 新增一个平台只需编写**一个适配器** — 而非重建整个机器人。
 
@@ -85,7 +70,7 @@ cargo run --release                  # launch the TUI
 
 ## 相关平台
 
-[Kalshi](https://github.com/tarpboi/Kalshi) · [Polymarket](https://github.com/tarpboi/Polymarket) · [Augur](https://github.com/tarpboi/Augur) · [Azuro](https://github.com/tarpboi/Azuro)
+[Kalshi](https://github.com/tarpboi/Kalshi) · [Polymarket](https://github.com/tarpboi/Polymarket) · [Predict.fun](https://github.com/tarpboi/Predict.fun) · [Augur](https://github.com/tarpboi/Augur)
 
 > 在[主工具包 →](https://github.com/tarpboi/Prediction-Markets-Trading-Bot-Toolkits#venue-coverage)中浏览完整平台目录
 
