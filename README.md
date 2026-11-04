@@ -20,7 +20,7 @@ These are the strategies mapped to Myriad Markets. They run here once its adapte
 | Strategy |
 |----------|
 | 📊 **Orderbook Imbalance** — the signal *is* the order book, no external feeds |
-| 🎯 **Directional Arbitrage** — arb base (Up + Down < $1), tilted toward the side with more edge |
+| 🎯 **Directional Arbitrage** — rest Yes + No bids under $1, tilted toward the side with more edge |
 
 > Want a strategy not listed here on Myriad Markets? Adapter coverage is demand-driven — [ask](https://t.me/tarpboi).
 
